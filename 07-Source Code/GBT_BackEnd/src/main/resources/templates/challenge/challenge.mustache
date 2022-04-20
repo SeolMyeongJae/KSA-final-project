@@ -1,0 +1,33 @@
+{{>challenge/challenge-top}}
+<h1>챌린지</h1>
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-6">
+      <a href="/api/admin/challenge/save" role="button" class="btn btn-primary">챌린지 등록</a>
+    </div>
+  </div>
+  <br>
+  <table class="table table-horizontal table-bordered">
+    <thead class="thead-strong">
+    <tr>
+      <th>챌린지번호</th>
+      <th>챌린지 제목</th>
+      <th>챌린지 내용</th>
+      <th>시작일</th>
+      <th>종료일</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    {{#challenges}}
+      <tr>
+        <td>{{id}}</td>
+        <td><a href="/api/admin/challenge/update/{{id}}">{{title}}</a></td>
+        <td>{{summary}}</td>
+        <td>{{startDate}}</td>
+        <td>{{endDate}}</td>
+      </tr>
+    {{/challenges}}
+    </tbody>
+  </table>
+</div>
+{{>index-bottom}}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/tab_info"
+        android:enabled="true"
+        android:icon="@drawable/info"
+        android:title="내 정보"/>
+
+    <item
+        android:id="@+id/tab_challenge"
+        android:enabled="true"
+        android:icon="@drawable/challenge"
+        android:title="챌린지"/>
+
+    <item
+        android:id="@+id/tab_statistic"
+        android:enabled="true"
+        android:icon="@drawable/statistics"
+        android:title="흡연 통계"/>
+
+</menu>

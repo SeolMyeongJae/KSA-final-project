@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogIn"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인 방법을 선택해 주세요!"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_google"
+        android:paddingLeft="7dp"
+        android:paddingTop="4dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="4dp"
+
+        android:text="Google 계정으로 시작하기"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_kakao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_kakao"
+        android:paddingLeft="7dp"
+        android:paddingTop="4dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="4dp"
+
+        android:text="Kakao 계정으로 시작하기"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_naver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_naver"
+        android:paddingLeft="7dp"
+        android:paddingTop="4dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="4dp"
+
+        android:text="Naver 계정으로 시작하기"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/minkyoung"
+        android:text="Produce By Team 'Discoder'"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

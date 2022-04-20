@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomChallengeSatus">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView3"
+        android:layout_width="142dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/nuroongji"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="100dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/textView38"
+        android:layout_width="98dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="내 닉네임"
+        app:layout_constraintBottom_toBottomOf="@+id/textView36"
+        app:layout_constraintEnd_toEndOf="@+id/roundedImageView3"
+        app:layout_constraintStart_toStartOf="@+id/roundedImageView3"
+        app:layout_constraintTop_toBottomOf="@+id/roundedImageView3" />
+
+    <TextView
+        android:background="@drawable/stroke_out_line_round"
+        android:id="@+id/textView36"
+        android:layout_width="181dp"
+        android:layout_height="168dp"
+        android:gravity="center"
+        android:text="내 챌린지 현황 그래프"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView3"
+        app:layout_constraintTop_toTopOf="@+id/roundedImageView3" />
+
+    <ListView
+        android:padding="10dp"
+        android:background="@drawable/stroke_out_line_round"
+        android:layout_width="0dp"
+        android:layout_height="507dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_custom_challenge_status_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/btn_round"
+        android:text="X"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

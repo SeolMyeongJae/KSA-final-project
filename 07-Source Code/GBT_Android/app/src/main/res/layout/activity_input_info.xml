@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputInfo"
+    android:layout_marginHorizontal="5dp"
+    android:background="@drawable/background_fade_out">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/minkyoung"
+            android:gravity="center"
+            android:text="회원정보 입력"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="261dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/minkyoung"
+            android:text="색칠된 항목은 필수로 입력해 주세요"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<ScrollView
+    android:layout_marginTop="5dp"
+    android:background="@drawable/stroke_out_line_round"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <TextView android:text="닉네임"
+                android:textColor="#E60339"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_nickname"
+                android:fontFamily="@font/minkyoung" />
+            <EditText android:hint="사용하실 닉네임을 입력해 주세요."
+                android:id="@+id/et_nickname"
+               />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <TextView android:text="출생년도"
+                android:textColor="#E60339"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_birth_year"
+                android:fontFamily="@font/minkyoung"/>
+
+            <LinearLayout>
+                <Button
+                    android:id="@+id/btn_select_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="날짜선택 하기"/>
+                <TextView
+                    android:id="@+id/tv_birthYear"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="년"
+                    />
+
+            </LinearLayout>
+
+            <!--            <EditText android:hint="출생년도를 입력해 주세요."-->
+<!--                android:id="@+id/et_birth"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <TextView android:text="성별"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_gender"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText android:hint="성별을 선택해 주세요."
+                android:id="@+id/et_gender"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <TextView android:text="1일 흡연량"
+                android:textColor="#E60339"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_smoking_amount"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText android:hint="하루 평균 담배 몇 개비를 피세요?"
+                android:id="@+id/et_smoking_amount"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <TextView android:text="흡연 경력"
+                android:textColor="#E60339"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_smoking_year"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText android:hint="담배를 피우신 지 몇 년 되셨나요?"
+                android:id="@+id/et_smoking_year"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <TextView android:text="담배 가격"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_price"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText android:hint="피우시는 담배의 가격을 입력해 주세요."
+                android:id="@+id/et_price"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <TextView android:text="포부"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_my_goal"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText android:hint="금연을 위한 다짐 한마디!"
+                android:id="@+id/et_comment"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+            <TextView android:text="프로필 사진"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_profile_photo"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText android:hint="사용하실 프로필 사진을 업로드 해 주세요."
+                android:layout_weight="8"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_search_in_album"
+                android:fontFamily="@font/minkyoung"
+                android:text="앨범에서
+                찾기"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <TextView android:text="동기부여 사진"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/input_info_will_photo"
+                android:fontFamily="@font/minkyoung"/>
+            <EditText
+                android:layout_weight="8"
+                android:hint="금연의지를 높여줄 사진을 업로드 해주세요." />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_search_in_album"
+                android:fontFamily="@font/minkyoung"
+                android:text="앨범에서
+                찾기"
+                android:textSize="14sp" />
+        </TableRow>
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제출하기"/>
+
+    </TableLayout>
+</ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/star" />
+
+
+</LinearLayout>
